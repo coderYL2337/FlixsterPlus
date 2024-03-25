@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FlixsterPlus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!-- Specify the shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @android:transition/move
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @android:transition/move
+        </item>
+    </style>
+
+    <style name="Theme.FlixsterPlus" parent="Base.Theme.FlixsterPlus" />
+</resources>

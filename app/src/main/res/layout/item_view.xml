@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/star"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/starImage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder_image"
+        android:transitionName="transition_starImage"/>
+
+    <TextView
+        android:id="@+id/starName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/starImage"
+        app:layout_constraintStart_toStartOf="@+id/starImage"
+        app:layout_constraintTop_toBottomOf="@+id/starImage"
+        android:transitionName="transition_starName"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
